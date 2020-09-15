@@ -55,12 +55,9 @@ namespace DesignPatterns_Decorator
 
     public class Client
     {
-        // Клиентский код работает со всеми объектами, используя интерфейс
-        // Компонента. Таким образом, он остаётся независимым от конкретных
-        // классов компонентов, с которыми работает.
         public void ClientCode(Component component)
         {
-            Console.WriteLine("RESULT: " + component.Operation());
+            WriteLine("RESULT: " + component.Operation());
         }
     }
     class Program
@@ -69,17 +66,14 @@ namespace DesignPatterns_Decorator
         {
             Client client = new Client();
             var simple = new ConcreteComponent();
-            Console.WriteLine("Client: I get a simple component:");
+            WriteLine("Client: I get a simple component:");
             client.ClientCode(simple);
-            Console.WriteLine();
-            // ...так и декорированные.
-            // Обратите внимание, что декораторы могут обёртывать не только
-            // простые компоненты, но и другие декораторы.
+            WriteLine();
             ConcreteDecoratorA decorator1 = new ConcreteDecoratorA(simple);
             ConcreteDecoratorB decorator2 = new ConcreteDecoratorB(decorator1);
             ConcreteDecoratorB decorator3 = new ConcreteDecoratorB(decorator2);
             ConcreteDecoratorB decorator4 = new ConcreteDecoratorB(decorator3);
-            Console.WriteLine("Client: Now I've got a decorated component:");
+            WriteLine("Client: Now I've got a decorated component:");
             client.ClientCode(decorator2);
             client.ClientCode(decorator3);
             client.ClientCode(decorator4);

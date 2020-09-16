@@ -12,22 +12,13 @@ namespace DesignPatterns_Decorator
     }
     class ConcreteComponent : Component
     {
-        public override string Operation()
-        {
-            return "ConcreteComponent";
-        }
+        public override string Operation() { return "ConcreteComponent"; }
     }
     abstract class Decorator : Component
     {
         protected Component _component;
-        public Decorator(Component component)
-        {
-            _component = component;
-        }
-        public void SetComponent(Component component)
-        {
-            _component = component;
-        }
+        public Decorator(Component component) { _component = component; }
+        public void SetComponent(Component component) { _component = component; }
         public override string Operation()
         {
             if (_component != null) return _component.Operation();
@@ -37,28 +28,16 @@ namespace DesignPatterns_Decorator
     class ConcreteDecoratorA : Decorator
     {
         public ConcreteDecoratorA(Component comp) : base(comp) { }
-        public override string Operation()
-        {
-            return $"ConcreteDecoratorA({base.Operation()})";
-        }
+        public override string Operation() { return $"ConcreteDecoratorA({base.Operation()})"; }
     }
     class ConcreteDecoratorB : Decorator
     {
-        public ConcreteDecoratorB(Component comp) : base(comp)
-        {
-        }
-        public override string Operation()
-        {
-            return $"ConcreteDecoratorB({base.Operation()})";
-        }
+        public ConcreteDecoratorB(Component comp) : base(comp) { }
+        public override string Operation() { return $"ConcreteDecoratorB({base.Operation()})"; }
     }
-
     public class Client
     {
-        public void ClientCode(Component component)
-        {
-            WriteLine("RESULT: " + component.Operation());
-        }
+        public void ClientCode(Component component) { WriteLine("RESULT: " + component.Operation()); }
     }
     class Program
     {

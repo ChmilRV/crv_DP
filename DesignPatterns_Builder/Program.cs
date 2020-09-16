@@ -17,26 +17,11 @@ namespace DesignPatterns_Builder
     public class ConcreteBuilder : IBuilder
     {
         private Product product = new Product();
-        public ConcreteBuilder()
-        {
-            Reset();
-        }
-        public void Reset()
-        {
-            product = new Product();
-        }
-        public void BuildPartA()
-        {
-            product.Add("PartA1");
-        }
-        public void BuildPartB()
-        {
-            product.Add("PartB1");
-        }
-        public void BuildPartC()
-        {
-            product.Add("PartC1");
-        }
+        public ConcreteBuilder() { Reset(); }
+        public void Reset() { product = new Product(); }
+        public void BuildPartA() { product.Add("PartA1"); }
+        public void BuildPartB() { product.Add("PartB1"); }
+        public void BuildPartC() { product.Add("PartC1"); }
         public Product GetProduct()
         {
             Product result = product;
@@ -47,17 +32,11 @@ namespace DesignPatterns_Builder
     public class Product
     {
         private List<object> parts = new List<object>();
-        public void Add(string part)
-        {
-            parts.Add(part);
-        }
+        public void Add(string part) { parts.Add(part); }
         public string ListParts()
         {
             string str = string.Empty;
-            for (int i = 0; i < parts.Count; i++)
-            {
-                str += parts[i] + ", ";
-            }
+            for (int i = 0; i < parts.Count; i++) { str += parts[i] + ", "; }
             str = str.Remove(str.Length - 2);
             return "Product parts: " + str + "\n";
         }
@@ -65,14 +44,8 @@ namespace DesignPatterns_Builder
     public class Director
     {
         private IBuilder builder;
-        public IBuilder Builder
-        {
-            set { builder = value; }
-        }
-        public void buildMinimalViableProduct()
-        {
-            builder.BuildPartC();
-        }
+        public IBuilder Builder { set { builder = value; } }
+        public void buildMinimalViableProduct() { builder.BuildPartC(); }
         public void buildFullFeaturedProduct()
         {
             builder.BuildPartA();

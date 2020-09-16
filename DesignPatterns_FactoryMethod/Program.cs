@@ -18,17 +18,11 @@ namespace DesignPatterns_FactoryMethod
     }
     class ConcreteCreator1 : Creator
     {
-        public override IProduct FactoryMethod()
-        {
-            return new ConcreteProduct1();
-        }
+        public override IProduct FactoryMethod() { return new ConcreteProduct1(); }
     }
     class ConcreteCreator2 : Creator
     {
-        public override IProduct FactoryMethod()
-        {
-            return new ConcreteProduct2();
-        }
+        public override IProduct FactoryMethod() { return new ConcreteProduct2(); }
     }
     public interface IProduct
     {
@@ -36,17 +30,11 @@ namespace DesignPatterns_FactoryMethod
     }
     class ConcreteProduct1 : IProduct
     {
-        public string Operation()
-        {
-            return "{Result of ConcreteProduct1}";
-        }
+        public string Operation() { return "{Result of ConcreteProduct1}"; }
     }
     class ConcreteProduct2 : IProduct
     {
-        public string Operation()
-        {
-            return "{Result of ConcreteProduct2}";
-        }
+        public string Operation() { return "{Result of ConcreteProduct2}"; }
     }
     class Client
     {

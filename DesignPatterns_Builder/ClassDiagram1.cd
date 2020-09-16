@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DesignPatterns_Builder.ConcreteBuilder" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="4.75" Y="2.25" Width="1.5" />
+  <Class Name="DesignPatterns_Builder.ConcreteBuilder" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAAAAAAAMACAAAAAAAAAIAACAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAgAABAAAAAAAAMACAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Right" Position="0.227" />
   </Class>
-  <Class Name="DesignPatterns_Builder.Product" Collapsed="true">
-    <Position X="7" Y="2.25" Width="1.5" />
+  <Class Name="DesignPatterns_Builder.Product">
+    <Position X="7" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DesignPatterns_Builder.Director" Collapsed="true">
+  <Class Name="DesignPatterns_Builder.Director">
     <Position X="2.75" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABBCAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAABBAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DesignPatterns_Builder.Program" Collapsed="true">
+  <Class Name="DesignPatterns_Builder.Program">
     <Position X="0.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="DesignPatterns_Builder.IBuilder" Collapsed="true">
+  <Interface Name="DesignPatterns_Builder.IBuilder">
     <Position X="4.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAMACAAAAAAAAAAAAAAAAAAA=</HashCode>

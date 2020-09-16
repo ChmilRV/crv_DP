@@ -1,58 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DesignPatterns_FactoryMethod.Creator" Collapsed="true">
-    <Position X="12.75" Y="0.5" Width="1.5" />
+  <Class Name="DesignPatterns_FactoryMethod.Creator">
+    <Position X="6.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DesignPatterns_FactoryMethod.ConcreteCreator1" Collapsed="true">
-    <Position X="12.75" Y="1.75" Width="1.5" />
+  <Class Name="DesignPatterns_FactoryMethod.ConcreteCreator1">
+    <Position X="5.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DesignPatterns_FactoryMethod.ConcreteCreator2" Collapsed="true">
-    <Position X="15.25" Y="1.75" Width="1.5" />
+  <Class Name="DesignPatterns_FactoryMethod.ConcreteCreator2">
+    <Position X="7.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DesignPatterns_FactoryMethod.ConcreteProduct1" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="13.5" Y="3" Width="1.5" />
+  <Class Name="DesignPatterns_FactoryMethod.ConcreteProduct1" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Left" Position="0.235" />
   </Class>
-  <Class Name="DesignPatterns_FactoryMethod.ConcreteProduct2" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="13.5" Y="4" Width="1.5" />
+  <Class Name="DesignPatterns_FactoryMethod.ConcreteProduct2" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Left" Position="0.226" />
   </Class>
-  <Class Name="DesignPatterns_FactoryMethod.Client" Collapsed="true">
-    <Position X="9" Y="1.75" Width="1.5" />
+  <Class Name="DesignPatterns_FactoryMethod.Client">
+    <Position X="1.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DesignPatterns_FactoryMethod.Program" Collapsed="true">
-    <Position X="9" Y="0.5" Width="1.5" />
+  <Class Name="DesignPatterns_FactoryMethod.Program">
+    <Position X="1.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="DesignPatterns_FactoryMethod.IProduct" Collapsed="true">
-    <Position X="10.75" Y="1.25" Width="1.5" />
+  <Interface Name="DesignPatterns_FactoryMethod.IProduct">
+    <Position X="3.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>

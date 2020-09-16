@@ -73,10 +73,12 @@ namespace DesignPatterns_Decorator
             ConcreteDecoratorB decorator2 = new ConcreteDecoratorB(decorator1);
             ConcreteDecoratorB decorator3 = new ConcreteDecoratorB(decorator2);
             ConcreteDecoratorB decorator4 = new ConcreteDecoratorB(decorator3);
+            ConcreteDecoratorA decorator5 = new ConcreteDecoratorA(decorator4);
             WriteLine("Client: Now I've got a decorated component:");
             client.ClientCode(decorator2);
             client.ClientCode(decorator3);
             client.ClientCode(decorator4);
+            client.ClientCode(decorator5);
             ReadKey();
         }
     }
